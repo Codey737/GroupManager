@@ -185,7 +185,7 @@ groups:
     - lockette.user.create.*      
     inheritance:
     info:
-      prefix: '&5[Mod]'
+      prefix: '&e[Mod]'
       build: true
       suffix: ''
   Admin:
