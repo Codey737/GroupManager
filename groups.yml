@@ -13,62 +13,197 @@ groups:
     default: true
     permissions:
     - -bukkit.command.kill
+    - essentials.kit
+    - essentials.kits.*
+    - essentials.time
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.pay
+    - essentials.pay.multiple
+    - essentials.worth
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.help
+    - essentials.helpop
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.recipe
+    - essentials.rules
+    - essentials.realname
+    - essentials.suicide
+    - essentials.ban.notify
+    - essentials.ping
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.home
+    - essentials.home.bed
+    - essentials.sethome
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.signs.use.*
+    - essentials.spawn  
+    - lockette.user.create.*  
     inheritance:
-    - g:groupmanager_default
-    - g:bukkit_default
-    - g:essentials_default
-    - g:towny_default
     info:
       prefix: '&e'
       build: false
       suffix: ''
-  Builder:
-    default: false
-    permissions: []
+  Regular:
+    default: true
+    permissions:
+    - -bukkit.command.kill
+    - essentials.kit
+    - essentials.kits.*
+    - essentials.time
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.pay
+    - essentials.pay.multiple
+    - essentials.worth
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.help
+    - essentials.helpop
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.recipe
+    - essentials.rules
+    - essentials.realname
+    - essentials.suicide
+    - essentials.ban.notify
+    - essentials.ping
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.home
+    - essentials.home.bed
+    - essentials.sethome
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.signs.use.*    
+    - slap.use
+    - essentials.spawn 
+    - lockette.user.create.*      
     inheritance:
-    - default
-    - g:essentials_builder
-    - g:towny_builder
     info:
-      prefix: '&2'
-      build: true
+      prefix: '&e'
+      build: false
       suffix: ''
   Moderator:
     default: false
-    permissions: []
+    permissions:
+    - bukkit.command.kill
+    - slap.use    
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.gamemode
+    - essentials.helpop
+    - essentials.helpop.recieve  
+    - -bukkit.command.kill
+    - essentials.kit
+    - essentials.kits.*
+    - essentials.time
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.pay
+    - essentials.pay.multiple
+    - essentials.worth
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.help
+    - essentials.helpop
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.recipe
+    - essentials.rules
+    - essentials.realname
+    - essentials.suicide
+    - essentials.ban.notify
+    - essentials.ping
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.home
+    - essentials.home.bed
+    - essentials.sethome
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.signs.use.* 
+    - essentials.time.set 
+    - essentials.time
+    - essentials.chat.ignoreexempt
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - essentials.nick.others
+    - essentials.seen
+    - essentials.seen.banreason
+    - essentials.ban
+    - essentials.ban.notify
+    - essentials.ban.offline
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.kill
+    - essentials.tempban
+    - essentials.tempban.offline
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.spawn
+    - essentials.sethome.multiple
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.magic
+    - essentials.joinfullserver
+    - essentials.signs.color
+    - essentials.signs.format
+    - essentials.signs.magic
+    - lockette.user.create.*      
     inheritance:
-    - builder
-    - g:groupmanager_moderator
-    - g:bukkit_moderator
-    - g:essentials_moderator
-    - g:towny_moderator
-    - g:vanish_moderator
     info:
-      prefix: '&5'
+      prefix: '&5[Mod]'
       build: true
       suffix: ''
   Admin:
     default: false
-    permissions: []
-    inheritance:
-    - moderator
-    - g:groupmanager_admin
-    - g:bukkit_admin
-    - g:essentials_admin
-    - g:towny_admin
-    - g:vanish_admin
-    info:
-      prefix: '&c'
-      build: true
-      suffix: ''
-  Owner:
-    default: false
     permissions:
-    - '*'
-    - -vanish.*
+    - bukkit.*
+    - essentials.*
+    - worldedit.*
+    - worldguard.*
+    - stables.admin
+    - multiverse.core*
+    - -essentials.vanish.effect
+    - lockette.admin.snoop
+    - lockette.admin.create
+    - lockette.admin.bypass
+    - lockette.admin.reload
     inheritance:
-    - admin
     info:
-      prefix: '&4'
+      prefix: '&c[Admin]'
       build: true
       suffix: ''
