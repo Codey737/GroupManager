@@ -50,6 +50,8 @@ groups:
     - essentials.signs.use.*
     - essentials.spawn  
     - lockette.user.create.*  
+    - bukkitircd.msg
+    - bukkitircd.list
     inheritance:
     info:
       prefix: '&e'
@@ -96,7 +98,9 @@ groups:
     - essentials.signs.use.*    
     - slap.use
     - essentials.spawn 
-    - lockette.user.create.*      
+    - lockette.user.create.* 
+    - bukkitircd.msg  
+    - bukkitircd.list    
     inheritance:
     info:
       prefix: '&e'
@@ -182,7 +186,14 @@ groups:
     - essentials.signs.color
     - essentials.signs.format
     - essentials.signs.magic
-    - lockette.user.create.*      
+    - lockette.user.create.*
+    - bukkitircd.kick
+    - bukkitircd.ban
+    - bukkitircd.unban
+    - bukkitircd.list
+    - bukkitircd.whois
+    - bukkitircd.msg
+    - bukkitircd.mode.halfop
     inheritance:
     info:
       prefix: '&e[Mod]'
@@ -202,6 +213,7 @@ groups:
     - lockette.admin.create
     - lockette.admin.bypass
     - lockette.admin.reload
+    - bukkitircd.*
     inheritance:
     info:
       prefix: '&c[Admin]'
