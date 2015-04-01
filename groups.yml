@@ -203,6 +203,7 @@ groups:
     default: false
     permissions:
     - bukkit.*
+    - Unex.canAddBadWord
     - essentials.*
     - worldedit.*
     - worldguard.*
