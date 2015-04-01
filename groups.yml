@@ -58,7 +58,7 @@ groups:
       build: true
       suffix: ''
   Regular:
-    default: true
+    default: false
     permissions:
     - -bukkit.command.kill
     - essentials.kit
